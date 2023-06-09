@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    /* Colors */
+    --blue: rgb(0, 0, 73);
+    --grey: rgb(189, 189, 189);
+    --wheat: wheat;
+    --pink: pink;
+
+    /* Clip Path */
+    --clipPathHero: polygon(0 0, 100% 0, 100% 80%, 23% 100%, 0 81%);
+}
+
+body{
+    background-color: var(--wheat);
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.fa-bars{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--wheat)
+}
+.nav{
+    background-color: var(--blue);
+    color: white;
+    width: 100%;
+    top: 0;
+}
+
+.nav-items{
+    /* Flex */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-items >div:nth-child(1){
+    display: flex;
+    margin: 10px;
+}
+
+.search{
+    margin-left: 10px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo .image{
+    width: 20px;
+    height: 20px;
+    background-color: var(--grey);
+}
+
+.logo .name{
+    margin-left: 10px;
+}
+
+/* inner items */
+.inner-items{
+    display: flex;
+}
+
+.ni{
+    width: 80px;
+    height: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Background */
+.background{
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: var(--clipPathHero);
+    /* Content */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section1 */
+.section1{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section1 img{
+    width: 200px;
+    height: 250px;
+    box-shadow: -10px 10px var(--pink);
+}
+
+.section1 .para{
+    width: 70%;
+}
+
+.cv-btn{
+    width: fit-content;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/* card 2 */
+
+.section2{
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--grey);
+    text-align: center;
+}
+
+.section2 .block1{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section2 .block2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section2 .block1 >div{
+    width: 250px;
+}
+
+.section2 .block2 >div{
+    width: 250px;
+}
+
+/* Section 3 */
+.section3 .background-image{
+    width: 100%;
+    height: 50vh;
+    margin-top: 80px;
+    background-image: url('images/mountains.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -10px 10px 10px black;
+    /* Font */
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Section 4 */
+.section4{
+    margin-top: 80px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s4-images{
+    margin-top: 20px;
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.s4-images >div{
+    margin: 5px;
+}
+
+/* Section5 */
+.section5{
+    background-color: var(--grey);
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info-cards{
+    width: 100%;
+    margin-top: 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.info-cards >div{
+    margin: 10px;
+}
+
+.card{
+    width: 250px;
+    background-color: white;
+    box-shadow: -5px 5px 10px black;
+}
+
+.card h5{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.view-btn{
+    width: fit-content;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    margin-top: 80px;
+    background-color: black;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+.f-blocks{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.f-rights{
+    color: var(--grey);
+}
+
+@media screen and (max-width: 768px){
+
+    .fa-bars{
+        position: absolute;
+        color: var(--wheat);
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .nav-items{
+        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Links */
+    #myLink{
+        display: none;
+    }
+    #myLink2{
+        display: none;
+    }
+    #myLink3{
+        display: none;
+    }
+    #myLink4{
+        display: none;
+    }
+    #myLink5{
+        display: none;
+    }
+    .search{
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .nav-items #myLinks{
+        display: none;
+    }
+
+    /* section1 */
+    .section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .section1 .para{
+        width: 90%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* Card 2 */
+    .section2 .block1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section2 .block2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Section 3 */
+    .section3 .background-image{
+    height: 90vh;
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+    .f-blocks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f-blocks >div{
+        margin-top: 15px;
+    }
+}
