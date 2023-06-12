@@ -1,0 +1,30 @@
+@keyframes scroll {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(calc(-100px * 8));}
+}
+
+.container{
+    width: 100%;
+    height: fit-content;
+}
+
+.slider-container{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    animation: scroll 20s linear infinite;
+}
+
+.slider-container >div{
+    margin: 10px;
+}
+
+.slider-image img{
+    height: 9em;
+    width: 16em;
+}
+
+.slider-image img:hover{
+    height: 10em;
+    width: 17em;
+}
