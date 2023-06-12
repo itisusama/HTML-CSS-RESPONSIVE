@@ -1,1 +1,7 @@
-
+1.If put your own images in seperate folders.
+  *add folder-name/image
+  *change image in css .background-image
+  *change profile image in index.html
+ 
+2. I use Nonagon Clip Path. You can generate your own, on the following site.
+  *https://bennettfeely.com/clippy/
