@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav__items{
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ff6000;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Check */
+nav .checkbox{
+    display: none;
+    color: white;
+}
+  
+nav input{
+    display: none;
+}
+  
+nav .checkbox i{
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+/* Check */
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+/* For Mobile View */
+@media screen and (max-width:768px){
+    nav .checkbox{
+        display: block;
+      }
+
+    ul{
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 80px;
+        padding: 2rem;
+        background-color: darkblue;
+        opacity: 66%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+    nav #check:checked ~ ul {
+        left: 0;
+      }
+}
