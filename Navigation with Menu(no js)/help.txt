@@ -1,0 +1,1 @@
+This is just a simple plain responsive nav. You can add your own hover, border radius, etc, to the style.
