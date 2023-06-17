@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="logo"><h3>Usama</h3></div>
+            <ul class="ul active" id="ul-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" id="menu">≡</a>
+        </nav>
+    </div>
+
+    <script>
+        const toggleMenu = document.getElementById("menu");
+        const myList = document.getElementById('ul-list');
+
+        toggleMenu.addEventListener('click', ()=>{
+            myList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
